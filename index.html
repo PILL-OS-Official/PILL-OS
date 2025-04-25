@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>PILL - OS</title>
+  <link rel="icon" href="icon.png" type="image/png">
+  <style>
+    body {
+      margin: 0;
+      font-family: "Consolas", monospace;
+      background-color: #1a1a1a;
+      color: #ffffff;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      position: relative;
+    }
+
+    .top-left {
+      position: absolute;
+      top: 20px;
+      left: 20px;
+      display: flex;
+      align-items: center;
+    }
+
+    .top-left-text {
+      color: white;
+      font-size: 1.1em;
+      margin-left: 10px;
+      font-weight: bold;
+    }
+
+    .icon {
+      width: 56px;
+      height: 56px;
+    }
+
+    h1 {
+      font-size: 4em;
+      margin-top: 60px;
+      margin-bottom: 0.3em;
+      color: #ff4d4d;
+      font-weight: normal;
+    }
+
+    p {
+      font-size: 1.4em;
+      margin-bottom: 2em;
+      max-width: 900px;
+      color: #c0c0c0;
+      font-weight: normal;
+    }
+
+    .download-btn {
+      padding: 1em 2.5em;
+      font-size: 1.2em;
+      background-color: #002b5b;
+      color: #4dcfff;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+      transition: background 0.3s ease;
+      text-decoration: none;
+      font-weight: normal;
+    }
+
+    .download-btn:hover {
+      background-color: #001f3f;
+    }
+
+    .notice {
+      margin-top: 1em;
+      color: #aaaaaa;
+      font-size: 1em;
+      font-weight: normal;
+      max-width: 800px;
+    }
+
+    .footer-left, .footer-right {
+      position: absolute;
+      bottom: 10px;
+      font-size: 0.9em;
+      color: #777777;
+    }
+
+    .footer-left {
+      left: 20px;
+    }
+
+    .footer-right {
+      right: 20px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Icone + texte en haut a gauche -->
+  <div class="top-left">
+    <img src="icon.png" alt="icon" class="icon">
+    <span class="top-left-text">PILL - OS [Indev Publique]</span>
+  </div>
+
+  <h1>PILL - OS</h1>
+
+  <p>Bienvenue sur le site officiel de PILL - OS, un OS creer par un jeune donnant des commandes personnalisee dans votre propre console ! Si le bouton est pas afficher, merci de rafraichir le site sinon cela presente une mise a jour du OS !</p>
+
+  <a class="download-btn" href="downloadable/PILL - OS.zip" download>Telecharger PILL - OS</a>
+
+  <div class="notice">Apres avoir telecharger PILL - OS, merci de le decompresser sinon, des messages risques de ne pas s'afficher et des commandes seront inutilisable (/createfile, ect...)</div>
+
+  <!-- Pied de page -->
+  <div class="footer-left">Cette version de PILL - OS est en developement !</div>
+  <div class="footer-right">Copyright - PILL - OS</div>
+
+</body>
+</html>
