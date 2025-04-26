@@ -4,13 +4,36 @@
   <meta charset="UTF-8">
   <title>PILL - OS</title>
   <link rel="icon" href="icon.png">
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono&display=swap" rel="stylesheet">
   <style>
     body {
       margin: 0;
-      font-family: Consolas, monospace;
-      background-color: #151515;
+      font-family: 'JetBrains Mono', monospace;
+      background-color: #111;
       color: white;
       text-align: center;
+    }
+
+    * {
+      text-shadow: 2px 2px 4px #000;
+    }
+
+    .top-bar {
+      display: flex;
+      align-items: center;
+      padding: 10px 20px;
+      background-color: #111;
+    }
+
+    .top-bar img {
+      height: 40px;
+      margin-right: 10px;
+    }
+
+    .top-bar .title-text {
+      color: white;
+      font-weight: bold;
+      font-size: 18px;
     }
 
     .header {
@@ -48,20 +71,21 @@
       display: flex;
       justify-content: center;
       align-items: center;
-      gap: 20px;
+      gap: 30px;
       padding: 20px;
-      max-width: 800px;
+      max-width: 1200px;
       margin: 0 auto 60px auto;
       text-align: left;
     }
 
     .bottom-section img {
-      max-width: 150px;
+      width: 700px;
       height: auto;
+      filter: drop-shadow(4px 4px 6px #000);
     }
 
     .bottom-text {
-      max-width: 500px;
+      max-width: 600px;
       color: #d3d3d3;
       font-size: 16px;
     }
@@ -71,30 +95,59 @@
       background: linear-gradient(90deg, #00ffff, #ff00ff, #00ff00, #ffff00);
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
+      text-shadow: none;
+    }
+
+    .footer {
+      position: fixed;
+      bottom: 10px;
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      padding: 0 20px;
+      font-size: 14px;
+    }
+
+    .footer-left {
+      color: #444;
+    }
+
+    .footer-right {
+      color: #444;
     }
   </style>
 </head>
 <body>
 
+  <div class="top-bar">
+    <img src="icon.png" alt="Icon">
+    <div class="title-text">PILL - OS [Indev Publique]</div>
+  </div>
+
   <div class="header">PILL - OS</div>
 
   <div class="subtitle">
-    Bienvenue sur le site officiel de PILL - OS, un OS creer par un jeune donnant des commandes personnalisee dans votre propre console! Si le bouton est pas afficher, merci de rafraichir le site sinon cela presente une mise a jour du OS!
+    Bienvenue sur le site officiel de PILL - OS, un OS créé par un jeune donnant des commandes personnalisées dans votre propre console ! Si le bouton ne s'affiche pas, merci de rafraîchir le site, sinon cela présente une mise à jour de l'OS !
   </div>
 
   <a href="downloadable/PILL - OS.zip" download>
-    <button class="download-button">Telechargee PILL - OS</button>
+    <button class="download-button">Télécharger PILL - OS</button>
   </a>
 
   <div class="download-info">
-    Apres avoir telecharger PILL - OS, merci de le decompresser sinon, des messages risques de ne pas s'afficher et des commandes seront inutilisable (/createfile, ect...)
+    Après avoir téléchargé PILL - OS, merci de le décompresser, sinon, des messages risquent de ne pas s'afficher et des commandes seront inutilisables (/createfile, etc...)
   </div>
 
   <div class="bottom-section">
     <img src="image1.png" alt="Image 1">
     <div class="bottom-text">
-      Une console tres simple et facile a utiliser mais avec quelque fonctionnalitees! Creez vos fichiers, voir vos fichiers et en supprimee! Avec aussi la possibilitee de metre des nom perso et des extension perso aussi! Et en plus que vous pouvez les voir dans le dossier puis dans <span class="gradient-text">File</span> !
+      Une console très simple et facile à utiliser mais avec quelques fonctionnalités ! Créez vos fichiers, voyez vos fichiers et supprimez-les ! Avec aussi la possibilité de mettre des noms perso et des extensions perso aussi ! Et en plus, vous pouvez les voir dans le dossier puis dans <span class="gradient-text">File</span> !
     </div>
+  </div>
+
+  <div class="footer">
+    <div class="footer-left">Cette version de PILL - OS est en développement !</div>
+    <div class="footer-right">Copyright - PILL - OS</div>
   </div>
 
 </body>
